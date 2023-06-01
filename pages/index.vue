@@ -2,8 +2,8 @@
     <div class="index">
         <el-container>
             <el-header>
-                <h1>Element Counter</h1>
-                <h2>Made with Element Plus and Nuxt3</h2>
+                <h1>Made with Element Plus and Nuxt3</h1>
+                <h2></h2>
             </el-header>
             <el-main>
                 <Counter />
