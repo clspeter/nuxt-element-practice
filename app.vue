@@ -1,5 +1,5 @@
 <template>
   <div>
-    <Counter />
+    <NuxtPage />
   </div>
 </template>
