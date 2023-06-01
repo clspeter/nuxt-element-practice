@@ -1,7 +1,8 @@
 # Nuxt 3 + Element Plus Practice
 
 I made this project for practice perpose.
-Hosted on Vercel
+
+Host on [Vercel](https://nuxt-element-practice.vercel.app/)
 
 ## Setup
 
