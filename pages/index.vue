@@ -6,6 +6,7 @@
             </el-header>
             <el-main>
                 <Counter />
+                <el-switch v-model="colorMode" inline-prompt active-text="dark" inactive-text="light" size="large" />
             </el-main>
         </el-container>
     </div>
@@ -21,3 +22,10 @@
     height: 100%;
 }
 </style>
+<script setup lang="ts">
+const color = useColorMode();
+const colorMode = computed({
+    get: () => color.value === 'dark',
+    set: () => (color.preference = color.value === 'dark' ? 'light' : 'dark'),
+});
+</script>
