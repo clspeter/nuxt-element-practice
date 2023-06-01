@@ -3,6 +3,7 @@
         <el-container>
             <el-header>
                 <h1>Element Counter</h1>
+                <h2>Made with Element Plus and Nuxt3</h2>
             </el-header>
             <el-main>
                 <Counter />
@@ -15,7 +16,7 @@
                 </el-config-provider>
                 <br />
                 <br />
-                <el-button text @click="open">去Google.com</el-button>
+                <el-button @click="open" type="success">去Google.com</el-button>
             </el-main>
         </el-container>
     </div>
