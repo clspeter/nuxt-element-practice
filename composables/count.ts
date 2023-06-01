@@ -9,10 +9,15 @@ export function useCount() {
     function dec() {
         count.value -= 1
     }
+    function setCount(item: number) {
+        console.log('setCount', item)
+        count.value = item
+    }
     return {
         count,
         inc,
         dec,
+        setCount,
     }
 }
 
