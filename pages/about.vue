@@ -6,7 +6,8 @@
                     這是一個練習使用Vue3的專案
                     <p>Nuxt3 + Tailwind CSS</p>
                     <p>使用nuxt 的 layout來做出共用header</p>
-                    <p>並使用內建的NuxtLink做導航</p>
+                    <p>使用內建的NuxtLink做導航</p>
+                    並將我的React番茄時鐘用Vue3重構
                 </div>
             </div>
         </div>
