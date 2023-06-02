@@ -13,6 +13,12 @@ import { NuxtLink } from '../.nuxt/components';
             </header>
         </div>
         <slot />
+        <div class="bg-green-900">
+            <footer class="flex py-6 px-4 space-x-10 justify-end text-green-400">
+                Hero footer
+            </footer>
+
+        </div>
     </div>
 </template>
 
