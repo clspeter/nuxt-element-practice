@@ -6,13 +6,15 @@
                 <div class="basis-32">
                     <div class="text-center" id="break-label">Break</div>
                     <div class="flex flex-row items-center justify-center">
-                        <button id="break-decrement" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
+                        <button @click="decrementBreakLength" id="break-decrement"
+                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
                             <el-icon>
                                 <Minus />
                             </el-icon>
                         </button>
                         <div id="break-length" class="mx-2">{{ breakLength }}</div>
-                        <button id="break-increment" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
+                        <button @click="incrementBreakLength" id="break-increment"
+                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
                             <el-icon>
                                 <Plus />
                             </el-icon>
@@ -22,13 +24,15 @@
                 <div class="basis-32">
                     <div class="text-center" id="session-label">Session</div>
                     <div class="flex flex-row items-center justify-center">
-                        <button id="session-decrement" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
+                        <button @click="decrementSessionLength" id="session-decrement"
+                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
                             <el-icon>
                                 <Minus />
                             </el-icon>
                         </button>
                         <div id="session-length" class="mx-2">{{ sessionLength }}</div>
-                        <button id="session-increment" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
+                        <button @click="incrementSessionLength" id="session-increment"
+                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
                             <el-icon>
                                 <Plus />
                             </el-icon>
@@ -59,7 +63,7 @@
         </div>
     </div>
 </template>
-  
+
 <script>
 import { ref } from 'vue';
 
@@ -75,6 +79,31 @@ export default {
         const audioRef = ref(null);
         let timer;
 
+        const decrementBreakLength = () => {
+            if (breakLength.value > 1 && !isRunning.value) {
+                breakLength.value--;
+            }
+        };
+
+        const incrementBreakLength = () => {
+            if (breakLength.value < 60 && !isRunning.value) {
+                breakLength.value++;
+
+            }
+        };
+
+        const decrementSessionLength = () => {
+            if (sessionLength.value > 1 && !isRunning.value) {
+                sessionLength.value--;
+            }
+        };
+
+        const incrementSessionLength = () => {
+            if (sessionLength.value < 60 && !isRunning.value) {
+                sessionLength.value++;
+            }
+        };
+
 
         return {
             breakLength,
@@ -83,6 +112,10 @@ export default {
             isBreak,
             isRunning,
             audioRef,
+            decrementBreakLength,
+            incrementBreakLength,
+            decrementSessionLength,
+            incrementSessionLength,
         };
     },
 };
