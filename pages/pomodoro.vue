@@ -1,20 +1,20 @@
 <template>
-    <div class="grow bg-gray-800 text-white md:p-0 p-4">
-        <div class="mx-auto mt-10 flex md:w-screen flex-col gap-2 rounded bg-emerald-700 md:max-w-xl py-4 md:p-4">
+    <div class="grow bg-base-100 text-netural md:p-0 p-4">
+        <div class="mx-auto mt-10 flex md:w-screen flex-col gap-2 rounded bg-secondary md:max-w-xl py-4 md:p-4">
             <div class="text-center text-3xl">Pomodoro Technique</div>
             <div class="flex flex-row justify-center text-2xl">
                 <div class="basis-32">
                     <div class="text-center" id="break-label">Break</div>
                     <div class="flex flex-row items-center justify-center">
                         <button :disabled="isStarted" @click="decrementBreakLength" id="break-decrement"
-                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500 disabled:pointer-events-none disabled:opacity-50">
+                            class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Minus />
                             </el-icon>
                         </button>
                         <div id="break-length" class="mx-2">{{ breakLength }}</div>
                         <button :disabled="isStarted" @click="incrementBreakLength" id="break-increment"
-                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500 disabled:pointer-events-none disabled:opacity-50">
+                            class="opacity-80 h-[24px] rounded  active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Plus />
                             </el-icon>
@@ -25,14 +25,14 @@
                     <div class="text-center" id="session-label">Session</div>
                     <div class="flex flex-row items-center justify-center">
                         <button :disabled="isStarted" @click="decrementSessionLength" id="session-decrement"
-                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500 disabled:pointer-events-none disabled:opacity-50">
+                            class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Minus />
                             </el-icon>
                         </button>
                         <div id="session-length" class="mx-2">{{ sessionLength }}</div>
                         <button :disabled="isStarted" @click="incrementSessionLength" id="session-increment"
-                            class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500 disabled:pointer-events-none disabled:opacity-50">
+                            class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Plus />
                             </el-icon>
@@ -40,13 +40,13 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-auto flex w-36 flex-col rounded border-2 border-emerald-800 py-2">
+            <div class="mx-auto flex w-36 flex-col rounded border-2 border-primary py-2">
                 <div class="text-center" id="timer-label">{{ isBreak ? 'Break' : 'Session' }}</div>
                 <div class="text-center text-5xl" id="time-left">{{ timerString }}</div>
                 <audio src="/time-up-ringtone.mp3" id="beep" ref="audioRef"></audio>
             </div>
             <div class="mb-2 flex flex-row justify-center gap-4">
-                <button @click="toggleTimer" class="rounded bg-emerald-800 active:bg-emerald-500 h-[40px]" id="start_stop">
+                <button @click="toggleTimer" class="opacity-80 rounded active:bg-primary h-[40px]" id="start_stop">
                     <el-icon v-show="!isRunning" size="40">
                         <VideoPlay />
                     </el-icon>
@@ -54,7 +54,7 @@
                         <VideoPause />
                     </el-icon>
                 </button>
-                <button @click="resetTimer" class="rounded bg-emerald-800 active:bg-emerald-500 h-[40px]" id="reset">
+                <button @click="resetTimer" class="opacity-80 rounded  active:bg-primary h-[40px]" id="reset">
                     <el-icon size="40">
                         <Refresh />
                     </el-icon>
