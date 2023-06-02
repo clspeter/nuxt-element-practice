@@ -7,11 +7,15 @@
                     <div class="text-center" id="break-label">Break</div>
                     <div class="flex flex-row items-center justify-center">
                         <button id="break-decrement" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
-                            -
+                            <el-icon>
+                                <Minus />
+                            </el-icon>
                         </button>
                         <div id="break-length" class="mx-2">{{ breakLength }}</div>
                         <button id="break-increment" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
-                            +
+                            <el-icon>
+                                <Plus />
+                            </el-icon>
                         </button>
                     </div>
                 </div>
@@ -19,11 +23,15 @@
                     <div class="text-center" id="session-label">Session</div>
                     <div class="flex flex-row items-center justify-center">
                         <button id="session-decrement" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
-                            -
+                            <el-icon>
+                                <Minus />
+                            </el-icon>
                         </button>
                         <div id="session-length" class="mx-2">{{ sessionLength }}</div>
                         <button id="session-increment" class="h-[24px] rounded bg-emerald-800 active:bg-emerald-500">
-                            +
+                            <el-icon>
+                                <Plus />
+                            </el-icon>
                         </button>
                     </div>
                 </div>
@@ -47,11 +55,11 @@
   
 <script>
 import { ref } from 'vue';
-import { CoPlus, CoMinus } from "oh-vue-icons/icons";
-
 
 export default {
+
     setup() {
+
         const breakLength = ref(5);
         const sessionLength = ref(25);
         const timerString = ref('25:00');
