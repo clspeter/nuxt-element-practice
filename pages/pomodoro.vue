@@ -42,11 +42,18 @@
                 <audio src="/time-up-ringtone.mp3" id="beep" ref="audioRef"></audio>
             </div>
             <div class="mb-2 flex flex-row justify-center gap-4">
-                <button class="rounded bg-emerald-800 active:bg-emerald-500" id="start_stop">
-                    <div>Start</div>
+                <button class="rounded bg-emerald-800 active:bg-emerald-500 h-[24px]" id="start_stop">
+                    <el-icon size="24">
+                        <VideoPlay />
+                    </el-icon>
+                    <el-icon size="24">
+                        <VideoPause />
+                    </el-icon>
                 </button>
-                <button class="rounded bg-emerald-800 active:bg-emerald-500" id="reset">
-                    Reset
+                <button class="rounded bg-emerald-800 active:bg-emerald-500 h-[24px]" id="reset">
+                    <el-icon size="24">
+                        <Refresh />
+                    </el-icon>
                 </button>
             </div>
         </div>
