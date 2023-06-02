@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "element-plus": "^2.3.5",
+    "oh-vue-icons": "^1.0.0-rc3",
     "vue-writer": "^1.2.0"
   }
 }
