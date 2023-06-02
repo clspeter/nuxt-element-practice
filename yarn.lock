@@ -5174,6 +5174,11 @@ vue-router@^4.2.2:
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
+vue-writer@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vue-writer/-/vue-writer-1.2.0.tgz#8b7b8f5bae3a42d74a9577d6557d2aa42432520b"
+  integrity sha512-EtunS6F12cyhXkKgIKDQxr6QEJpSmj4rUSqE149XZN5vbPQuX7PIbWovA1oPvGYUxrlq5HHobdZAzOzSeNAG7g==
+
 vue@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.3.4.tgz#8ed945d3873667df1d0fcf3b2463ada028f88bd6"

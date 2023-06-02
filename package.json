@@ -17,6 +17,7 @@
     "sass": "^1.62.1"
   },
   "dependencies": {
-    "element-plus": "^2.3.5"
+    "element-plus": "^2.3.5",
+    "vue-writer": "^1.2.0"
   }
 }
