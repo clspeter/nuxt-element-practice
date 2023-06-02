@@ -4,16 +4,16 @@
             <div class="text-center text-3xl">Pomodoro Technique</div>
             <div class="flex flex-row justify-center text-2xl">
                 <div class="basis-32">
-                    <div class="text-center" id="break-label">Break</div>
+                    <div class="text-center text-lg">Break</div>
                     <div class="flex flex-row items-center justify-center">
-                        <button :disabled="isStarted" @click="decrementBreakLength" id="break-decrement"
+                        <button :disabled="isStarted" @click="decrementBreakLength"
                             class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Minus />
                             </el-icon>
                         </button>
-                        <div id="break-length" class="mx-2">{{ breakLength }}</div>
-                        <button :disabled="isStarted" @click="incrementBreakLength" id="break-increment"
+                        <div class="mx-2">{{ breakLength }}</div>
+                        <button :disabled="isStarted" @click="incrementBreakLength"
                             class="opacity-80 h-[24px] rounded  active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Plus />
@@ -22,16 +22,16 @@
                     </div>
                 </div>
                 <div class="basis-32">
-                    <div class="text-center" id="session-label">Session</div>
+                    <div class="text-center text-lg">Session</div>
                     <div class="flex flex-row items-center justify-center">
-                        <button :disabled="isStarted" @click="decrementSessionLength" id="session-decrement"
+                        <button :disabled="isStarted" @click="decrementSessionLength"
                             class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Minus />
                             </el-icon>
                         </button>
-                        <div id="session-length" class="mx-2">{{ sessionLength }}</div>
-                        <button :disabled="isStarted" @click="incrementSessionLength" id="session-increment"
+                        <div class="mx-2">{{ sessionLength }}</div>
+                        <button :disabled="isStarted" @click="incrementSessionLength"
                             class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
                                 <Plus />
@@ -40,13 +40,13 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-auto flex w-36 flex-col rounded border-2 border-primary py-2">
-                <div class="text-center" id="timer-label">{{ isBreak ? 'Break' : 'Session' }}</div>
-                <div class="text-center text-5xl" id="time-left">{{ timerString }}</div>
-                <audio src="/time-up-ringtone.mp3" id="beep" ref="audioRef"></audio>
+            <div class="mx-auto flex w-48 flex-col rounded border-2 border-primary py-2">
+                <div class="text-center text-3xl mb-4">{{ isBreak ? 'Break' : 'Session' }}</div>
+                <div class="text-center text-5xl">{{ timerString }}</div>
+                <audio src="/time-up-ringtone.mp3" ref="audioRef"></audio>
             </div>
             <div class="mb-2 flex flex-row justify-center gap-4">
-                <button @click="toggleTimer" class="opacity-80 rounded active:bg-primary h-[40px]" id="start_stop">
+                <button @click="toggleTimer" class="opacity-80 rounded active:bg-primary h-[40px]">
                     <el-icon v-show="!isRunning" size="40">
                         <VideoPlay />
                     </el-icon>
@@ -54,7 +54,7 @@
                         <VideoPause />
                     </el-icon>
                 </button>
-                <button @click="resetTimer" class="opacity-80 rounded  active:bg-primary h-[40px]" id="reset">
+                <button @click="resetTimer" class="opacity-80 rounded  active:bg-primary h-[40px]">
                     <el-icon size="40">
                         <Refresh />
                     </el-icon>
