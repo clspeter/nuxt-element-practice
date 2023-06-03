@@ -2,7 +2,7 @@
     <div class="grow w-full flex">
         <div class="m-auto">
             <VueWriter class="text-2xl md:text-5xl text-accent font-semibold"
-                :array="['<This_is_Peter />', 'WhoStartedToLearnVue.js']" :caret="cursor" />
+                :array="['<Hi, This_is_Peter />', 'WhoStartedToLearn.vue']" :caret="cursor" />
         </div>
     </div>
 </template>
