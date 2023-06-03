@@ -17,7 +17,7 @@ export default {
 .is-typed span.cursor {
     display: inline-block;
     width: 3px;
-    background-color: white;
+    background-color: black;
     animation: blink 1s infinite;
 }
 </style>
