@@ -1,6 +1,6 @@
 <template>
-    <div class="grow bg-gray-200 text-netural md:p-0 p-4">
-        <div class="mx-auto mt-10 flex md:w-screen flex-col gap-2 rounded bg-secondary md:max-w-xl py-4 md:p-4">
+    <div class="grow text-rose-700 md:p-0 p-4">
+        <div class="mx-auto mt-10 flex md:w-screen flex-col gap-2 rounded bg-rose-200 md:max-w-xl py-4 md:p-4 shadow-lg">
             <div class="text-center text-3xl">Pomodoro Technique</div>
             <div class="flex flex-row justify-center text-2xl mb-2">
                 <div class="basis-32">
