@@ -14,6 +14,20 @@ export default {
 }
 </script>
 <style>
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .is-typed span.cursor {
     display: inline-block;
     width: 3px;
