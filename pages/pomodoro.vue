@@ -5,7 +5,7 @@
             <div class="flex flex-row justify-center text-2xl mb-2">
                 <div class="basis-32">
                     <div class="text-center text-lg">Break</div>
-                    <div class="flex flex-row items-center justify-center">
+                    <div class="flex flex-row items-center justify-center space-x-4">
                         <button :disabled="isStarted" @click="decrementBreakLength"
                             class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="basis-32">
                     <div class="text-center text-lg">Session</div>
-                    <div class="flex flex-row items-center justify-center">
+                    <div class="flex flex-row items-center justify-center space-x-4">
                         <button :disabled="isStarted" @click="decrementSessionLength"
                             class="opacity-80 h-[24px] rounded active:bg-primary disabled:pointer-events-none disabled:opacity-30">
                             <el-icon>
@@ -45,7 +45,7 @@
                 <div class="text-center text-5xl">{{ timerString }}</div>
                 <audio src="/time-up-ringtone.mp3" ref="audioRef"></audio>
             </div>
-            <div class="mb-2 flex flex-row justify-center gap-4">
+            <div class="mb-2 flex flex-row justify-center gap-4 space-x-4">
                 <button @click="toggleTimer" class="opacity-80 rounded active:bg-primary h-[40px]">
                     <el-icon v-show="!isRunning" size="40">
                         <VideoPlay />
