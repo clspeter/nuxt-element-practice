@@ -1,8 +1,8 @@
 <template>
-    <div class="grow bg-base-100 text-netural md:p-0 p-4">
+    <div class="grow bg-gray-200 text-netural md:p-0 p-4">
         <div class="mx-auto mt-10 flex md:w-screen flex-col gap-2 rounded bg-secondary md:max-w-xl py-4 md:p-4">
             <div class="text-center text-3xl">Pomodoro Technique</div>
-            <div class="flex flex-row justify-center text-2xl">
+            <div class="flex flex-row justify-center text-2xl mb-2">
                 <div class="basis-32">
                     <div class="text-center text-lg">Break</div>
                     <div class="flex flex-row items-center justify-center">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-auto flex w-48 flex-col rounded border-2 border-primary py-2">
+            <div class="mx-auto flex w-48 flex-col rounded border-2 border-primary py-2 mb-2">
                 <div class="text-center text-3xl mb-4">{{ isBreak ? 'Break' : 'Session' }}</div>
                 <div class="text-center text-5xl">{{ timerString }}</div>
                 <audio src="/time-up-ringtone.mp3" ref="audioRef"></audio>

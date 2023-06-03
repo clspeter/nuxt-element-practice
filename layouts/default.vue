@@ -15,7 +15,9 @@ import { NuxtLink } from '../.nuxt/components';
         <slot />
         <div class="bg-primary">
             <footer class="flex py-6 px-4 space-x-10 justify-end text-neutral">
-                Hero footer
+                <NuxtLink class="text-underline" to="https://github.com/clspeter/nuxt-element-practice">
+                    Made by clspeter
+                </NuxtLink>
             </footer>
 
         </div>

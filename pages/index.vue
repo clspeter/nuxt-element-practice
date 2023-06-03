@@ -1,8 +1,8 @@
 <template>
-    <div class="grow w-full bg-base-100 flex">
+    <div class="grow w-full bg-gray-200 flex">
         <div class="m-auto">
             <VueWriter class="text-2xl md:text-5xl text-accent font-semibold"
-                :array="['<This_is_Peter />', 'WhoSartedToLearnVue.js']" :caret="cursor" />
+                :array="['<This_is_Peter />', 'WhoStartedToLearnVue.js']" :caret="cursor" />
         </div>
     </div>
 </template>
